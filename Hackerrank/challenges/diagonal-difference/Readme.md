@@ -1,4 +1,5 @@
-```md
+Easy
+
 ## Sample Input
 
 | STDIN | Function |
@@ -66,4 +67,4 @@ Sum of the secondary diagonal:
 |4 - 19| = 15
 
 ```
-```
+
