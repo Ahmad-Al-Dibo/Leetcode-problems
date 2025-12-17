@@ -14,8 +14,7 @@ import sys
 #
 
 def aVeryBigSum(ar):
+    assert 1 <= len(ar) <= 10
     for i in ar:
-        assert 1<= len(ar) <= 10
         assert 0 <= i <= 10**10
     return sum(ar)
-
