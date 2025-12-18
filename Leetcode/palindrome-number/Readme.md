@@ -2,7 +2,7 @@
 ## **Titel:** Check of een getal een palindrome is
 
 
-##  Doel / Probleem dat het oplost
+## Doel / Probleem dat het oplost
 
 * Controleert of een gegeven integer hetzelfde blijft als je het omdraait.
 * Negatieve getallen zijn **geen palindromen**.
@@ -10,7 +10,7 @@
 
 ---
 
-## 3️⃣ Inputs en outputs
+## Inputs en outputs
 
 * **Input:** een integer `x`
 * **Output:** `True` als `x` een palindrome is, anders `False`
@@ -26,7 +26,7 @@
 
 ---
 
-## 4️⃣ Beschrijving van de logica / stappen
+## Beschrijving van de logica / stappen
 
 1. Controleer eerst of `x` negatief is. Zo ja, return `False`.
 2. Optioneel: controleer of `x` binnen het bereik van een 32-bit integer ligt.
@@ -36,7 +36,7 @@
 
 ---
 
-## 5️⃣ Complexiteit
+## Complexiteit
 
 * **Tijd:** O(n), waarbij n het aantal cijfers in `x` is.
 * **Ruimte:** O(n) extra, omdat we de string en zijn omgekeerde maken.
@@ -45,7 +45,7 @@
 
 ---
 
-## 6️⃣ Voorbeeld / illustratie
+## Voorbeeld / illustratie
 
 ```python
 x = 121
@@ -68,7 +68,7 @@ Resultaat = False
 
 ---
 
-## 7️⃣ Extra opmerkingen / beperkingen
+## Extra opmerkingen / beperkingen
 
 * Negatieve getallen worden altijd als niet-palindroom beschouwd.
 * Alleen integers binnen 32-bit bereik worden toegestaan (optioneel).
@@ -76,7 +76,7 @@ Resultaat = False
 
 ---
 
-## 8️⃣ Python code voorbeeld
+## Python code voorbeeld
 
 ```python
 class Solution:
@@ -103,3 +103,4 @@ for num in numbs:
 123: False
 0: True
 ```
+
