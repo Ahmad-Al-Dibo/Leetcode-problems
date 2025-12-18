@@ -1,8 +1,24 @@
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def list_to_linked(lst):
+    dummy = ListNode()
+    current = dummy
+    for v in lst:
+        current.next = ListNode(v)
+        current = current.next
+    return dummy.next
+
+
+def linked_to_list(node):
+    result = []
+    while node:
+        result.append(node.val)
+        node = node.next
+    return result
+
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
@@ -24,6 +40,10 @@ class Solution:
                 l2 = l2.next
 
         return dummy.next
+
+anser = Solution().addTwoNumbers(list_to_linked([2,4,3]), list_to_linked([5,6,4]))
+print(linked_to_list(anser))
+
 
 """
 input 1
