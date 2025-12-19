@@ -1,7 +1,3 @@
-Nice work — your **solution is correct**, now you mainly need to **polish the explanation** (this looks like a LeetCode submission). I’ll rewrite it in **clear English** while keeping your idea and code intact.
-
----
-
 ## Intuition
 
 At first, I thought the problem could be solved by simply converting each Roman character to its numeric value and returning the sum. However, after testing this idea, I realized that Roman numerals are not always additive. In some cases, a smaller numeral appears before a larger one, which means the smaller value must be subtracted instead of added.
